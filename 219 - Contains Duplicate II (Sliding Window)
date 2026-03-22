@@ -1,0 +1,30 @@
+"""
+LeetCode 219 - Contains Duplicate II
+Difficulty: Easy
+Topic: Arrays, Hash Set, Sliding Window
+
+Problem Link:
+https://leetcode.com/problems/contains-duplicate-ii/
+
+Approach:
+Use a sliding window (set) of size k.
+Check if the current element exists in the window.
+
+Time Complexity: O(n)
+Space Complexity: O(k)
+"""
+
+class Solution:
+    def containsNearbyDuplicate(self, nums, k):
+        window = set()
+
+        for i in range(len(nums)):
+            if nums[i] in window:
+                return True
+
+            window.add(nums[i])
+
+            if len(window) > k:
+                window.remove(nums[i - k])
+
+        return False
