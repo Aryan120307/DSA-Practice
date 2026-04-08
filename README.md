@@ -18,6 +18,7 @@ This repository contains my solutions to LeetCode problems using Python.
 | 58 | Length of Last Word | Easy | Strings |
 | 73 | Set Matrix Zeroes | Medium | Arrays |
 | 088 | Merge Sorted Array | Easy | Array |
+| 121 | Best Time to Buy and Sell Stock | Easy | Arrays |
 | 136 | Single Number | Easy | Array |
 | 169 | Majority Element | Easy | Arrays |
 | 189 | Rotate Array | Medium | Arrays |
